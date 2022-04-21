@@ -1,0 +1,56 @@
+body {
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.judul{
+  margin: 2rem;
+  font-weight: bold;
+}
+
+.image{
+  width: 800px;
+  display: flex;
+  margin: 1rem auto;
+}
+
+.tabs-body {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80%;
+  margin: 1rem auto;
+  padding: 2rem;
+}
+
+.tabs-body input[type="radio"]{
+  display: none;
+}
+
+.tabs-body label{
+  padding: 1.5rem;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.tabs-content{
+  width: 100%;
+  padding: 20px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  order: 1;
+  display: none;
+}
+
+.tabs-body input[type="radio"]:checked + label + .tabs-content{
+  display: block;
+}
+
+.tabs-body input[type="radio"]:checked + label {
+  background: #F9F9F9;
+  color: blue;
+  border-bottom: 2px solid blue;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
